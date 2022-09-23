@@ -48,10 +48,12 @@
 ![横坐标平方](figs/bilinearXLabel.png)
 
 3. 拟合得到关系为
+
 $$
 t = 9.514681372549019 \times 10^{-10} x^2 + 0.23865098039215127
 $$
-其中，$x$为数据量大小
+
+其中，$x$ 为数据量大小
 ### 问题 3
 1. 对于 10 与 1000，计算 `isPerfect` 做的工作不一样多。 计算 10 时，调用的子函数 `divisorSum` 需要迭代10次，而计算1000时，则需要迭代1000次，明显不一样多。
 2. 对于搜索范围为 1-1000 的数，`findPerfect` 其工作量与 1000-2000 时不一致。
@@ -60,9 +62,11 @@ $$
    - 一次迭代调用一次 `isPerfect(num)` 函数 $num = 1,2,3,..., < stop$
    - 一次 `isPerfect(num)` 又调用一次 `divisorSum(num)` 函数，而 `divisorSum(num)` 函数内，又要迭代 num 次
 因此总的迭代次数为
+
 $$
 \underbrace{\Sigma_{1}^{stop-1}}_{\text{findPerfect函数}}  \underbrace{1}_{\text{isPerfect函数}} * \underbrace{num}_{\text{divisorSum函数}} \approx \frac{(stop-1-1+1)(stop-1+1)}{2} \sim stop^2 
 $$
+
 + 因此，明显迭代 1000-2000 时工作量更大。
 
 ```c++
