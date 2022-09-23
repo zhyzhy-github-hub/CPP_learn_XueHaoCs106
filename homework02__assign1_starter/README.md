@@ -251,8 +251,8 @@ $$
 可以看到，拟合结果误差略大，预期计算到40960000个数据量时的时间为 433s，实际上测试程序用了 391s，误差可以接受，大致得到了比较满意的预测时间结果。
 
 
-![$N -v.s- \mathrm{time}$](figs/N_smartSum_XLabel.png)
-![$N \sqrt{N} -v.s- \mathrm{time}$](figs/NsqrtN_smartSum_XLabel.png)
+![$N$ -v.s- $\mathrm{time}$](figs/N_smartSum_XLabel.png)
+![$N \sqrt{N}$ -v.s- $\mathrm{time}$](figs/NsqrtN_smartSum_XLabel.png)
 
 <!-- $$
 N - \mathrm{time} \;
