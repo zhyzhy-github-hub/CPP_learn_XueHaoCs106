@@ -400,6 +400,7 @@
 + 将两个 `Vector` 换成 `Stack` 操作，经测试，大概可以使 `EU post-Nice` 测试快 8~10 秒。
 
 所以最后得到的复杂度应该是
+
 $$
 O(2^N \times (1 + 8 + N)) \sim O(N \times 2^N)
 $$
@@ -408,6 +409,7 @@ $$
 ![](figs/times.png)
 
 然后凑了一个函数，拟合画图
+
 $$
 t = 2^N \times (1 + 8 + N) \times 3.22 \times 10^{-8}
 $$
