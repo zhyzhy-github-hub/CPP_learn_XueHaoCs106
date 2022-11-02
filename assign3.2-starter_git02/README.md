@@ -711,3 +711,5 @@ Vector<int> computePowerIndexes(Vector<int>& blocks)
 ```
 
 ![](figs/thinking01Niu_my_recAndRec.png)
+
+#### 总结，上面三种实现效率差不多，只不过是随机数生成导致的时间误差。
