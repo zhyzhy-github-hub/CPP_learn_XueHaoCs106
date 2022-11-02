@@ -359,6 +359,8 @@ Vector<int> computePowerIndexes(Vector<int>& blocks)
 
 ### 一个更高效的实现方法
 
++ 下面三个实现方法，运行时间都差不多，多运行几次，时间基本一致。
+
 #### Niu 同学的方法，int函数，return 参数累加，迭代 + 递归
 ```c++
 // 将提供向量中的元素值求总和 int
