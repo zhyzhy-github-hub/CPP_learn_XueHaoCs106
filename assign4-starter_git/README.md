@@ -236,4 +236,4 @@ Ball::Ball(int id, GWindow* w) {
 
 ![](figs/ques14_NlogN.png)
 
-通过观察计算时间，可以却它的复杂度就是这些。
+通过观察计算时间，可以确定它的复杂度就是这些。
